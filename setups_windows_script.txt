@@ -1,0 +1,15 @@
+1) PowerShell от имени администратора
+2) Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1')))
+3) choco install mingw
+4) https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe - скачать Python и установить (в начале установки выбрать add to PATH)
+5) добавить в переменную среды path ту строку: C:\ProgramData\chocolatey\lib\mingw\tools\install\mingw64\bin
+6) pip install starknet-py
+7) pip install ethereum_gasprice
+8) pip install web3
+9) pip install cryptography
+10) перенести папку с кодом в корень C:
+11) cd C:\CRYPTO_scripts
+12) заходим на сайт: https://alpha-mainnet.starknet.io/ - нажимаем на значок замка -> подробнее -> экспорт -> скачиваем файл
+13) заходим в "Управление сертификатами пользователей" -> Доверенные корневые центры сертификаци -> сертификаты -> импорт скачанного файла
+14) python shifrator.py (опционально)
+15) python main.py
